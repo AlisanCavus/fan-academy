@@ -134,12 +134,12 @@ Can use 1 AP to swap places with any friendly unit.
 Move 3`;
 
 export const councilItemsText = `Upgrades:
--Sword (3): +50% attack
--Armor (3): +20% physical resist, +10% HP
--Helm (3): +20% magical resist, +10% HP
+-Runemetal (3): +50% attack
+-Dragonscale (3): +20% physical resist, +10% HP
+-Shining Helm (3): +20% magical resist, +10% HP
 
 Consumables:
--Scroll (2): Targets one friendly. Unit has 300% attack power for one attack/heal.
+-Supercharge (2): Targets one friendly. Unit has 300% attack power for one attack/heal.
 
 -Inferno (2): Targets a 3×3 area. KO'd enemies are destroyed, and other enemies take 350 M.
 
@@ -188,12 +188,12 @@ If spawned on an enemy deploy tile, will be automatically destroyed if an enemy 
 Move 3`;
 
 export const elvesItemsText = `Upgrades:
--Sword (3): +50% attack
+-Runemetal (3): +50% attack
 -Soulstone (3): Passive life leech increased to 66%, +10% HP (bonus applied to base -HP only)
--Helm (3): +20% magical resist, +10% HP (bonus applied to base HP only)
+-Shining Helm (3): +20% magical resist, +10% HP
 
 Consumables:
--Scroll (2): Targets one friendly. Unit has 300% attack power for one attack/heal.
+-Supercharge (2): Targets one friendly. Unit has 300% attack power for one attack/heal.
 
 -Soul Harvest (2): Targets a 3×3 area. Enemies take 100 M. All friendly units in play gain D/(N+3) current and max HP (reviving KO'd units in the process), where D is the total damage dealt to non-Crystal units by the spell, and N is the number of friendly units in play.
 
@@ -201,3 +201,55 @@ Consumables:
 
 Faction passive:
 Units are healed for 33% of any damage they deal to enemy units (not crystals).`;
+
+export const dwarvesText = `Paladin (3):
+900 HP
+10% P, 10% M resist
+200 attack (P), range 1
+Heals for 200% attack, revives for 50% attack, range 2
+Self-heals for 50% of any healing done, not including overheal.
+All friendly units and crystals in AoE range of Paladin gain 5% attack power, physical resist, and magical resist. Stacks from multiple Paladins.
+Move 2
+
+Grenadier (3):
+800 HP
+200 attack (M), range 3. Ignores LOS.
+At range, 100% to target, AoE for 50%.
+In melee, 50% damage, no AoE.
+Move 2
+
+Gunner (3):
+800 HP
+300 attack (P), range 2.
+In melee, 100% damage, no splash.
+At range, cone attack deals 66% damage to main target and up to two nearby targets.
+Move 2
+
+Engineer (3):
+800 HP
+200 attack (P), range 1.
+Can shield a friendly target in range 3, canceling next damaging attack against that unit/crystal and any associated debuffs. Expires when it prevents any damage, when Engineer is knocked down, or when Engineer shields a different target.
+Gets twice the increased benefit from special tiles as other Dwarves: 140 attack, 28% resist, 420 assault damage and +4 to movement when standing on speed tile.
+Move 2
+
+Annihilator (1):
+650 HP
+300 attack (M), range 3. 100% to target, AoE for 20%.
+Target unit/crystal gets -50% P resist on the next physical attack that hits it.
+AoE targets are knocked one square directly away from main target.
+Move 2`;
+
+export const dwarvesItemsText = `Upgrades:
+-Runemetal (3): +50% attack
+-Dragonscale (3): +20% physical resist, +10% HP
+-Shining Helm (3): +20% magical resist, +10% HP
+
+Consumables:
+-Supercharge (2): Targets one friendly. Unit has 300% attack power for one attack/heal.
+
+-Dwarven Brew (2): Targets one friendly. Heals for 1000 and adds 50% M and P resist lasting for one hit. Stacks with other resist bonuses. If target is also shielded, buff remains when shield is broken.
+
+-Pulverizer (2): Targets one enemy unit or crystal. Target takes 600 P. If target is a crystal, AoE for 33%, including any added damage from Assault tiles (the 200 P AoE is reduced by the target's physical resist, but added splash from Assault tile damage is not). Splash occurs even if crystal was shielded. If target is a unit, its Armour or  Soulstone (but not Helm) is destroyed.
+
+Faction Passive:
++20% benefit to special tiles. Attack gives +120, Defense/Magic Defense gives +24%, Assault gives +360. Speed gives +3 move.`;
