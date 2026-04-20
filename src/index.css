@@ -1,1 +1,9 @@
+@import url(https://db.onlinewebfonts.com/c/52d6c264e9aab2b8042d2c6173fa1690?family=Blambot+FXPro+BB+W00+Heavy);
+@import url(https://db.onlinewebfonts.com/c/35ea81e6465272c42067f70738bada53?family=Blambot+FXPro+Light+BB);
+
 @import "tailwindcss";
+
+@theme {
+  --font-blambot-heavy: "Blambot FXPro BB W00 Heavy", sans-serif;
+  --font-blambot-light: "Blambot FXPro Light BB", sans-serif;
+}
