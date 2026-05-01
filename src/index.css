@@ -1,25 +1,22 @@
-/* @import url(https://db.onlinewebfonts.com/c/52d6c264e9aab2b8042d2c6173fa1690?family=Blambot+FXPro+BB+W00+Heavy);
-@import url(https://db.onlinewebfonts.com/c/35ea81e6465272c42067f70738bada53?family=Blambot+FXPro+Light+BB); */
-
 @import "tailwindcss";
 
 @font-face {
-  font-family: "Blambot FXPro BB W00 Heavy";
+  font-family: "proHeavy";
   font-style: normal;
-  font-weight: 200 700;
+  font-weight: 700;
   font-display: swap;
-  src: url("/fonts/BlambotFXProBBW00Heavy.woff2") format("woff2");
+  src: url("/fonts/BlambotFXProHeavyLowerCapsBB.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Blambot FXPro Light BB";
+  font-family: "proLight";
   font-style: normal;
-  font-weight: 200 700;
+  font-weight: 400;
   font-display: swap;
-  src: url("/fonts/BlambotFXProLightBB.woff2") format("woff2");
+  src: url("/fonts/BlambotFXProLightBB.woff") format("woff");
 }
 
 @theme {
-  --font-blombot-heavy: "Blambot FXPro BB W00 Heavy", sans-serif;
-  --font-blombot-light: "Blambot FXPro Light BB", sans-serif;
+  --font-proHeavy: "proHeavy", sans-serif;
+  --font-proLight: "proLight", sans-serif;
 }
